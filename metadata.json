@@ -1,6 +1,0 @@
-{
-  "name": "The Red Line",
-  "description": "An interactive Neo-Victorian Modern detective web app featuring a clue board and an AI hint system.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
