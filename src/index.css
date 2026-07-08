@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Courier Prime", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-charcoal: #1a1a1a;
+  --color-manila: #F4EBD0;
+  --color-crimson: #C92A2A;
+  --color-typewriter: #4AF626;
+  --color-corkboard: #2b2522;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-white font-sans antialiased;
+  }
+}
+
+/* Custom styles for React Flow */
+.react-flow__node {
+  @apply shadow-none bg-transparent;
+}
+
+.typewriter-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
